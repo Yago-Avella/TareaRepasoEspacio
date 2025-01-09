@@ -3,51 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datos Curiosos sobre el Espacio</title>
+    <title>Curiosidades del Espacio</title>
     <link rel="stylesheet" href="datos_curiosos.css">
 </head>
 <body>
     <header>
-        <h1>Curiosidades sobre el Espacio</h1>
+        <h1>Datos Curiosos del Espacio</h1>
     </header>
 
     <section>
-        <h2>El Universo y sus Misterios</h2>
-        <p>El universo tiene muchas sorpresas. Aquí hay algunas curiosidades fascinantes que tal vez no conocías:</p>
-        <ul>
-            <li>El universo es infinito y está en constante expansión.</li>
-            <li>Existen más estrellas en el cielo que granos de arena en todas las playas de la Tierra.</li>
-            <li>La Vía Láctea tiene una forma espiral, con un agujero negro en su centro.</li>
-            <li>La luz de las estrellas más cercanas tarda miles de años en llegar a nosotros.</li>
-            <li>En el espacio exterior, el sonido no puede viajar porque no hay aire.</li>
-        </ul>
+        <h2>Curiosidades del Espacio</h2>
+
+        <!-- Dato curioso 1 -->
+        <div class="dato-curioso">
+            <h3>El Sol es 330,000 veces más masivo que la Tierra</h3>
+            <p>El Sol tiene una masa impresionante que equivale a 330,000 veces la masa de la Tierra. Esto es lo que le permite generar la enorme cantidad de energía que emite, y que es esencial para la vida en nuestro planeta.</p>
+        </div>
+
+        <!-- Dato curioso 2 -->
+        <div class="dato-curioso">
+            <h3>El universo observable tiene un radio de unos 46,5 mil millones de años luz</h3>
+            <p>El universo observable es tan vasto que su radio se extiende a unos 46,5 mil millones de años luz. Esto significa que la luz de los objetos más lejanos que podemos ver ha viajado durante 46,5 mil millones de años antes de llegar a nosotros.</p>
+        </div>
+
+        <!-- Dato curioso 3 -->
+        <div class="dato-curioso">
+            <h3>Los agujeros negros no son visibles</h3>
+            <p>Aunque no podemos ver los agujeros negros directamente, podemos detectar su presencia observando cómo afectan el espacio y el tiempo a su alrededor. Esto se debe a la gravedad extremadamente fuerte que poseen.</p>
+        </div>
+
+        <!-- Dato curioso 4 -->
+        <div class="dato-curioso">
+            <h3>La luna Titán tiene mares de metano líquido</h3>
+            <p>La luna Titán de Saturno es la única luna en nuestro sistema solar que tiene grandes cuerpos de líquido en su superficie, aunque no son de agua, sino de metano líquido, lo que le da un aspecto muy diferente al de cualquier otro mundo conocido.</p>
+        </div>
+
+        <!-- Dato curioso 5 -->
+        <div class="dato-curioso">
+            <h3>Las estrellas más grandes son hasta 1000 veces más grandes que el Sol</h3>
+            <p>Existen algunas estrellas supergigantes rojas que pueden ser hasta 1000 veces más grandes que el Sol. Estas estrellas tienen una vida corta y explosiva, finalizando en una supernova cuando llegan al final de su ciclo.</p>
+        </div>
+
+        <!-- Dato curioso 6 -->
+        <div class="dato-curioso">
+            <h3>El universo se está expandiendo a un ritmo acelerado</h3>
+            <p>Desde el Big Bang, el universo ha estado en expansión. Lo sorprendente es que esta expansión se está acelerando debido a una misteriosa fuerza llamada energía oscura, que sigue siendo un gran misterio para los científicos.</p>
+        </div>
+
+        <!-- Dato curioso 7 -->
+        <div class="dato-curioso">
+            <h3>El primer exoplaneta fue descubierto en 1992</h3>
+            <p>En 1992, se descubrió el primer exoplaneta orbitando una estrella pulsante, llamada PSR B1257+12. Desde entonces, miles de exoplanetas han sido encontrados en diversas partes del universo.</p>
+        </div>
+
+        <!-- Dato curioso 8 -->
+        <div class="dato-curioso">
+            <h3>El Sol tiene un ciclo de actividad de 11 años</h3>
+            <p>El Sol pasa por un ciclo de actividad de 11 años, durante el cual su actividad solar, como las manchas solares y las erupciones, aumenta y disminuye. Este ciclo tiene efectos sobre el clima espacial que pueden afectar a la Tierra.</p>
+        </div>
+
+        <!-- Dato curioso 9 -->
+        <div class="dato-curioso">
+            <h3>La estación espacial internacional viaja a 28,000 km/h</h3>
+            <p>La estación espacial internacional viaja a una velocidad impresionante de 28,000 km/h. Esto le permite dar una vuelta completa a la Tierra aproximadamente cada 90 minutos.</p>
+        </div>
     </section>
 
-    <section>
-        <h2>Los Planetas del Sistema Solar</h2>
-        <p>Los planetas del sistema solar tienen características asombrosas:</p>
-        <ul>
-            <li>Júpiter es el planeta más grande y tiene una gran tormenta conocida como la Gran Mancha Roja.</li>
-            <li>En Venus, un día es más largo que un año.</li>
-            <li>Urano gira sobre su lado, lo que lo hace único entre los planetas del sistema solar.</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Curiosidades del Espacio</p>
-    </footer>
-
-    <!-- Cuadro centrado con enlace para volver a la página principal -->
     <div class="enlace-cuadro">
-        <a href="Espacio.html">Volver a la página principal</a>
+        <a href="espacio.html">Volver al inicio</a>
     </div>
 
-    <button id="infoButton">Más Información</button>
-    <dialog id="infoDialog">
-        <p>¿Sabías que la primera foto de un agujero negro fue tomada en 2019 por el Telescopio Event Horizon?</p>
-        <button id="closeDialog">Cerrar</button>
-    </dialog>
+    <footer>
+        <p>&copy; 2025 Exploración del Universo</p>
+    </footer>
 
-    <script src="JSEspacio.js"></script>
+    <!-- Script para generar estrellas aleatorias -->
+    <script>
+        // Generar estrellas aleatorias en el fondo
+        const body = document.body;
+        for (let i = 0; i < 500; i++) { // Aumentamos la cantidad de estrellas
+            const point = document.createElement('div');
+            point.className = 'point';
+            point.style.left = Math.random() * 100 + 'vw'; // Asegura que las estrellas cubran toda la pantalla
+            point.style.top = Math.random() * 100 + 'vh';
+            point.style.opacity = Math.random();
+            point.style.width = point.style.height = Math.random() * 3 + 'px';
+            body.appendChild(point);
+        }
+    </script>
 </body>
 </html>
