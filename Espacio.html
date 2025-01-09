@@ -10,7 +10,7 @@
     <header>
         <h1>Explorando el Universo</h1>
     </header>
-    
+
     <section>
         <h2>Introducción</h2>
         <p>El universo es un vasto y misterioso espacio que ha fascinado a la humanidad desde tiempos inmemoriales. Con cada descubrimiento, nuestra comprensión del cosmos se expande.</p>
@@ -27,22 +27,27 @@
         <p>¿Sabías que el universo se está expandiendo a un ritmo acelerado? Esta expansión es una de las áreas más investigadas en la cosmología moderna.</p>
     </section>
 
+    <div class="enlace-cuadro">
+        <a href="datos_curiosos.html">Ver más datos curiosos sobre el espacio</a>
+    </div>
+
     <footer>
         <p>&copy; 2025 Exploración del Universo</p>
     </footer>
 
-    <!-- Cuadro centrado con enlace hacia la página de datos curiosos -->
-    <div class="enlace-cuadro">
-        <a href="Datos_curiosos.html">Ver más datos curiosos sobre el espacio</a>
-    </div>
-
-    <button id="infoButton">Más Información</button>
-    <dialog id="infoDialog">
-        <p>¿Sabías que la luz del sol tarda alrededor de 8 minutos y 20 segundos en llegar a la Tierra?</p>
-        <button id="closeDialog">Cerrar</button>
-    </dialog>
-
-    <script src="JSEspacio.js"></script>
+    <!-- Script para generar estrellas aleatorias -->
+    <script>
+        // Generar estrellas aleatorias en el fondo
+        const body = document.body;
+        for (let i = 0; i < 500; i++) { // Aumentamos la cantidad de estrellas
+            const point = document.createElement('div');
+            point.className = 'point';
+            point.style.left = Math.random() * 100 + 'vw'; // Asegura que las estrellas cubran toda la pantalla
+            point.style.top = Math.random() * 100 + 'vh';
+            point.style.opacity = Math.random();
+            point.style.width = point.style.height = Math.random() * 3 + 'px';
+            body.appendChild(point);
+        }
+    </script>
 </body>
 </html>
-
