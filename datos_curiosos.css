@@ -1,0 +1,83 @@
+/* styles.css */
+
+/* Diferencia entre clase e ID: 
+   Una clase (.clase) se usa para aplicar estilos a múltiples elementos, mientras que un ID (#id) se usa para un elemento único y específico. */
+
+   body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    padding: 1em;
+    margin: 1em 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+}
+
+button {
+    display: block;
+    margin: 1em auto;
+    padding: 0.5em 1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#infoDialog {
+    padding: 1em;
+}
+
+#infoDialog button {
+    margin-top: 1em;
+}
+
+/* Estilo para los cuadros con enlaces */
+.enlace-cuadro {
+    background-color: #1e3d58; /* Nuevo color que armoniza con la página */
+    text-align: center;
+    padding: 1em;
+    margin: 2em 0;
+    border-radius: 8px;
+}
+
+.enlace-cuadro a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.enlace-cuadro a:hover {
+    color: #f4f4f4;
+    text-decoration: underline;
+}
