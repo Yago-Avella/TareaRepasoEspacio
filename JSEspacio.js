@@ -1,5 +1,3 @@
-// script.js
-
 const infoButton = document.getElementById('infoButton');
 const infoDialog = document.getElementById('infoDialog');
 const closeDialog = document.getElementById('closeDialog');
@@ -26,18 +24,3 @@ infoButton.addEventListener('click', () => {
 closeDialog.addEventListener('click', () => {
     infoDialog.close();
 });
-
-// Función para generar puntos (estrellas) aleatorios
-function generatePoints(count) {
-    const body = document.body;
-    for (let i = 0; i < count; i++) {
-        const point = document.createElement('div');
-        point.className = 'point';
-        point.style.top = `${Math.random() * 100}vh`;
-        point.style.left = `${Math.random() * 100}vw`;
-        body.appendChild(point);
-    }
-}
-
-// Generar 100 puntos aleatorios al cargar la página
-generatePoints(100);
